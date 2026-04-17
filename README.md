@@ -19,20 +19,20 @@ orbital data from NinjaSat.
 
 ## Contents
 
-| Directory / File | Description |
-|-----------------|-------------|
-| `orbit/`        | Orbit propagation and decay analysis scripts (SGP4/TLE-based) |
-| `euv/`          | GOES-18 EXIS EUV data processing and Savitzky-Golay filtering |
-| `crosscorr/`    | Cross-correlation analysis between EUV flux and thermospheric density |
-| `data/`         | Sample input data or data download scripts |
-| `figures/`      | Scripts for reproducing figures in the paper |
-| `scripts/`      | Scripts for analysis|
+| Directory / File          | Description |
+|--------------------------|-------------|
+| `comparison_GNSS_TLE/`   | Comparison scripts between GNSS-derived and TLE-propagated orbits |
+| `correlation/`           | Cross-correlation analysis between solar EUV flux and thermospheric density |
+| `Difference_gps_SGP4/`   | Analysis of orbital altitude differences between GPS observations and SGP4 propagation |
+| `example_altitude_fitting/` | Example scripts for altitude fitting procedures |
+| `GNSS_data/`             | GNSS-derived orbital data from NinjaSat |
+| `Savitzky-golay/`        | Savitzky-Golay smoothing filter applied to the rate of change of orbital altitude time series |
 
 ---
 
 ## Requirements
 
-- Python 3.9+
+- Python 3.11.8+
 - numpy
 - scipy
 - astropy
