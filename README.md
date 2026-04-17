@@ -35,7 +35,6 @@ orbital data from NinjaSat.
 - Python 3.11.8+
 - numpy
 - scipy
-- astropy
 - matplotlib
 - sgp4
 
