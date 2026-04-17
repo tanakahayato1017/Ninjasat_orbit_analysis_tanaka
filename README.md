@@ -50,12 +50,8 @@ pip install numpy scipy astropy matplotlib sgp4
 ## Data Sources
 
 - **GOES-18 EXIS EUV**: [NOAA NCEI](https://www.ncei.noaa.gov/)
-- **NinjaSat TLE / GNSS data**: ISAS/JAXA
-- **Geomagnetic indices (Kp, Dst)**: [GFZ Potsdam](https://www.gfz-potsdam.de/)
+- **NinjaSat TLE / GNSS data**: RIKEN
 
 
 ---
 
-## Citation
-
-If you use this code, please cite:
