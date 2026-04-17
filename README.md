@@ -38,12 +38,6 @@ orbital data from NinjaSat.
 - matplotlib
 - sgp4
 
-Install dependencies:
-
-```bash
-pip install numpy scipy astropy matplotlib sgp4
-```
-
 ---
 
 ## Data Sources
