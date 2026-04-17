@@ -3,7 +3,7 @@
 This repository contains the analysis codes associated with the paper:
 
 **"Thermospheric Expansion Driven by Solar EUV Variability: Impacts on the Orbit of a LEO CubeSat"**
-Hayato Tanaka et al., *Earth, Planets and Space*, (2025, in preparation)
+Hayato Tanaka et al., *Earth, Planets and Space*, (2026, in preparation)
 
 ---
 
@@ -26,6 +26,7 @@ orbital data from NinjaSat.
 | `crosscorr/`    | Cross-correlation analysis between EUV flux and thermospheric density |
 | `data/`         | Sample input data or data download scripts |
 | `figures/`      | Scripts for reproducing figures in the paper |
+| `scripts/`      | Scripts for analysis|
 
 ---
 
