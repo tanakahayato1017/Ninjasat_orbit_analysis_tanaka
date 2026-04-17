@@ -53,20 +53,6 @@ pip install numpy scipy astropy matplotlib sgp4
 - **NinjaSat TLE / GNSS data**: ISAS/JAXA
 - **Geomagnetic indices (Kp, Dst)**: [GFZ Potsdam](https://www.gfz-potsdam.de/)
 
----
-
-## Usage
-
-```bash
-# Orbit decay analysis
-python orbit/propagate_tle.py --input data/ninjaSat_tle.txt
-
-# EUV data processing
-python euv/process_exis.py --input data/goes18_exis.nc
-
-# Cross-correlation analysis
-python crosscorr/xcorr_euv_density.py
-```
 
 ---
 
