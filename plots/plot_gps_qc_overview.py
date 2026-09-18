@@ -40,7 +40,7 @@ N_GAPS_ANNOTATE = 2  # 最大の欠測ギャップのうち注記するもの (9
 daily = pd.read_csv(IN_DAILY, parse_dates=["date"])
 gaps = pd.read_csv(IN_GAPS, parse_dates=["gap_start", "gap_end"])
 sats_hist = pd.read_csv(IN_SATS)
-hdop_hist = pd.read_csv(IN_HDOP)
+hdop_hist = pd.read_csv(IN_HDOP) if IN_HDOP.exists() else None  # not in the public release
 
 fig = plt.figure(figsize=(12, 7.5))
 gs = fig.add_gridspec(2, 2, height_ratios=[1.15, 1], hspace=0.38, wspace=0.25)
@@ -82,16 +82,22 @@ ax.set_ylabel("count")
 ax.set_title("(b) Tracked satellites")
 ax.grid(alpha=0.3, axis="y")
 
-# --- (c) HDOPヒストグラム ---
-ax = fig.add_subplot(gs[1, 1])
-centers = (hdop_hist["bin_left"] + hdop_hist["bin_right"]) / 2
-ax.bar(centers, hdop_hist["count"], width=(hdop_hist["bin_right"] - hdop_hist["bin_left"]),
-       color="#DD8452", edgecolor="white", linewidth=0.3)
-ax.set_xlabel("gpsHDilutionOfPos")
-ax.set_ylabel("count")
-ax.set_title("(c) Horizontal dilution of precision")
-ax.set_xlim(0, hdop_hist.loc[hdop_hist["count"] > 0, "bin_right"].max())
-ax.grid(alpha=0.3, axis="y")
+# --- (c) HDOPヒストグラム (公開版では省略可) ---
+if hdop_hist is not None:
+    ax = fig.add_subplot(gs[1, 1])
+    centers = (hdop_hist["bin_left"] + hdop_hist["bin_right"]) / 2
+    ax.bar(centers, hdop_hist["count"], width=(hdop_hist["bin_right"] - hdop_hist["bin_left"]),
+           color="#DD8452", edgecolor="white", linewidth=0.3)
+    ax.set_xlabel("gpsHDilutionOfPos")
+    ax.set_ylabel("count")
+    ax.set_title("(c) Horizontal dilution of precision")
+    ax.set_xlim(0, hdop_hist.loc[hdop_hist["count"] > 0, "bin_right"].max())
+    ax.grid(alpha=0.3, axis="y")
+else:
+    ax = fig.add_subplot(gs[1, 1])
+    ax.axis("off")
+    ax.text(0.5, 0.5, "(c) HDOP histogram omitted:\ngpsHDilutionOfPos is not in the public release",
+            ha="center", va="center", fontsize=9)
 
 fig.suptitle("GPS telemetry QC overview (input to specific-energy pipeline)",
              fontsize=12, y=0.995)
