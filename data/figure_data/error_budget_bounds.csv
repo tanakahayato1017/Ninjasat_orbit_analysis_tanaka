@@ -1,0 +1,11 @@
+item,worst_case_Jkg_day,pct_of_signal_low_pct,pct_of_signal_typical_pct,note
+SRP_worst_case_A0.02m2,9.78352128,2.4585547875907383,1.2173522869248419,"physically-worst-case bound (always accelerating along velocity), A/m=0.0025 m^2/kg, m=8.0 kg, q=0.3"
+SRP_worst_case_A0.06m2,29.350563840000003,7.375664362772215,3.652056860774526,"physically-worst-case bound (always accelerating along velocity), A/m=0.0075 m^2/kg, m=8.0 kg, q=0.3"
+SRP_worst_case_A0.10m2,48.917606400000004,12.292773937953692,6.08676143462421,"physically-worst-case bound (always accelerating along velocity), A/m=0.0125 m^2/kg, m=8.0 kg, q=0.3"
+SRP_worst_case_A0.15m2,73.3764096,18.43916090693054,9.130142151936314,"physically-worst-case bound (always accelerating along velocity), A/m=0.0187 m^2/kg, m=8.0 kg, q=0.3"
+SRP_net_eclipse_asymmetry_A0.06m2,8.805169152000001,2.2126993088316644,1.0956170582323577,non-dissipative SRP mostly cancels over an orbit; net residual from eclipse asymmetry taken as 0.1-0.3x worst-case (upper end reported here)
+gravity_higher_order_thirdbody_daily_mean,45.0295787068316,11.315730108257585,5.602978625914902,"conservative forces (J3+, lunisolar 3rd-body) cannot create secular energy loss; empirical bound = despiked E_J2 daily std (519.3 J/kg, median) / sqrt(N_day=133); bounds ALL unmodelled periodic terms + velocity-approx error jointly"
+gravity_higher_order_thirdbody_daily_diff,63.68144091514799,16.00285898725145,7.923808362455424,"sqrt(2) x daily_mean bound, propagated to a 2-day difference (the scale at which the decay signal is read off)"
+statistical_error_se_dEdt_3h_median,623.9224805780653,156.78890634668215,77.63395579751098,"median se_dEdt of single 3h-bin central difference (src/03_dEdt_proxy.py, bin-internal std propagation)"
+statistical_error_se_dEdt_daily,109.05351213346373,27.40465591948014,13.56940293718644,"se_E_median / (N_bins_per_day * dt_day), see docs/2026-07-02_pipeline_remediation.md sec 3.6"
+decay_signal_reference_daily_|dEdt|,803.6721485704184,100.0,100.0,"daily |dE/dt| distribution: p10=398, median=804, p90=1568 J/kg/day (this row is the reference scale, not an error term)"

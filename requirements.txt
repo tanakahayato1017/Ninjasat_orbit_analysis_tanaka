@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+matplotlib
+sgp4
+skyfield
+astropy
+# NOTE: jupyter is excluded: its install fails without Windows Long Path
+# support. Analyses are plain scripts in src/. See README.md.

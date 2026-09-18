@@ -1,0 +1,13 @@
+quantity,value,unit,note
+std_monthly_minus_daily_deltah_3h,342.8027832930726,m,"std of (Delta h_monthly - Delta h_daily), 3h bins, full period"
+std_weekly_minus_daily_deltah_3h,317.4614652194394,m,"std of (Delta h_weekly - Delta h_daily), 3h bins, full period"
+within_month_drift_slope_median,6.809425908304195,m/day,median across months of linear slope of Delta h_monthly(t) vs days-since-epoch
+within_month_drift_slope_min,-10.903133601832112,m/day,min across months
+within_month_drift_slope_max,42.44163815236171,m/day,max across months
+sgp4_error_growth_rate,7.782691312301978,m/day,"linear fit of |h_TLE_monthly-h_TLE_daily| median vs |days_since_epoch|, bins with |days_since_epoch|>=1"
+peak_lag_range_304nm_min,6.0,h,"min peak lag across TLE modes, 304 nm"
+peak_lag_range_304nm_max,63.0,h,"max peak lag across TLE modes, 304 nm"
+peak_lag_spread_304nm,57.0,h,"max-min peak lag across TLE modes, 304 nm"
+peak_lag_range_1216nm_min,12.0,h,"min peak lag across TLE modes, 1216 nm"
+peak_lag_range_1216nm_max,60.0,h,"max peak lag across TLE modes, 1216 nm"
+peak_lag_spread_1216nm,48.0,h,"max-min peak lag across TLE modes, 1216 nm"

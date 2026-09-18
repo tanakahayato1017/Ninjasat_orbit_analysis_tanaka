@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "NinjaSat orbital-energy decay analysis: code and data"
+type: software
+authors:
+  - family-names: Tanaka
+    given-names: Hayato
+    email: tanaka.h.eff6@m.isct.ac.jp
+    affiliation: "Department of Physics, School of Science, Institute of Science Tokyo"
+repository-code: "https://github.com/tanakahayato1017/Ninjasat_orbit_analysis_tanaka"
+preferred-citation:
+  type: article
+  title: "Thermospheric Response to Solar EUV Variability Probed with Orbital-Energy Decay from NinjaSat CubeSat GNSS Telemetry"
+  journal: "Earth, Planets and Space"
+  year: 2026
+  notes: "under review, manuscript EPSP-D-26-00116"
+  authors:
+    - family-names: Tanaka
+      given-names: Hayato
+    - family-names: Nakagawa
+      given-names: Takao
+    - family-names: Nozawa
+      given-names: Satoshi
+    - family-names: Tamagawa
+      given-names: Toru
+    - family-names: Enoto
+      given-names: Teruaki
+    - family-names: Kitaguchi
+      given-names: Takao
+    - family-names: Iwakiri
+      given-names: Wataru
+    - family-names: Mihara
+      given-names: Tatehiro
+    - family-names: Takeda
+      given-names: Tomoshi
+    - family-names: Ota
+      given-names: Naoyuki
+    - family-names: Aoyama
+      given-names: Amira
+    - family-names: Iwata
+      given-names: Satoko
+    - family-names: Takahashi
+      given-names: Takuya
+    - family-names: Yamasaki
+      given-names: Kaede

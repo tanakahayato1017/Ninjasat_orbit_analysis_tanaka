@@ -1,0 +1,19 @@
+key,value,note
+within_day_std_EJ2_Jkg,519.3064350481907,median over days (despiked)
+n_adjacent_pairs,28180.0,
+white_noise_per_sample_Jkg,421.6545504272065,std(adjacent dE)/sqrt(2)
+white_variance_share,0.6592743429167061,fraction of within-day variance that is white
+structured_component_Jkg,303.1280481685768,sqrt(within-day^2 - white^2)
+equiv_speed_error_cms,5.536449542726549,dE/dv = v_i
+equiv_height_error_m,49.90027987620876,dE/dh = mu/r^2 (if all in position)
+lat_pattern_peak_to_peak_Jkg,993.3639421479584,15-deg-bin means of day-detrended E
+proxy_12h_line_over_continuum,272.73857755077177,peak period 12.00 h
+proxy_24h_line_over_continuum,5.0565110205858455,
+euv_irr_256_12h_line_over_continuum,3.6885250115983164,
+euv_irr_284_12h_line_over_continuum,11.83521462543635,
+euv_irr_304_12h_line_over_continuum,2.773617986442845,
+euv_irr_1175_12h_line_over_continuum,4.28790637733712,
+euv_irr_1216_12h_line_over_continuum,309.3558420874012,
+euv_irr_1335_12h_line_over_continuum,3.998907810078969,
+euv_irr_1405_12h_line_over_continuum,3.260928664482384,
+ripple_mean_crosswavelength_corr,0.7815811731847249,expected: shared proxy -> common-mode ripple
